@@ -1,0 +1,20 @@
+.yzb-tab{width: 561px;float: left;}
+.yzb-tab-list{height: 27px;}
+.yzb-tab-list ul li{float: left;}
+.yzb-tab-list ul li a{display: inline-block;height: 27px;line-height: 27px;color: #444;font-size: 14px;text-decoration: none;text-align: center;padding: 0 10px;}
+.yzb-tab-list ul li.this{background:#ff7800;}
+.yzb-tab-list ul li.this a{color: #fff;}
+.yzb-tab-con{width: 561px;height: 40px;}
+.yzb-con1{width: 561px;display: none;}
+
+.searchcon{position: relative;}
+.block{display: block;}
+.searchcon input{border: 3px solid #ff7800;display: inline-block;float: left;font-size: 14px;height: 34px;line-height: 33px;text-indent: 10px;width: 466px;}
+.searchcon button{float: left;background: #FF7800;color: #fff;display: inline-block;height: 40px;width: 84px;text-align: center;font-size: 18px;border: none;}
+.input-x{display:none;width: 448px;position: absolute;top: 40px;left: 0;border: 1px solid #d6d6d6;overflow: hidden;padding:10px 10px 0;background: #fff;overflow: hidden;z-index: 9999;}
+.input-x ul li{line-height: 25px;}
+.input-x ul li a{font-size: 14px;color: #666;text-decoration: none;width: 80%;display: inline-block;text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.input-x ul li a:hover{color: #FF7800;}
+.input-x ul li span{float: right;color: #666;}
+.yzb-close{display:block;text-align:right;text-decoration: none;color: #666;}
+.yzb-close:hover{color: #FF7800;}

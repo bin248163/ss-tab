@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>tab</title>
+		<link href="style.css" rel="stylesheet" />
+		<link href="Globalstyle.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="yzb-tab">
+			<div class="yzb-tab-list" id="yzb-tab">
+				<ul>
+					<!--复制li添加tab数量-->
+					<li id="yzb-tab1">
+						<a href="">标题1</a>
+					</li>
+					<li>
+						<a href="">标题2</a>
+					</li>
+				</ul>
+			</div>
+			<div class="yzb-tab-con" id="yzb-tab-con">
+				<div class="yzb-con1">
+					<!--tab1内容-->
+					<form action="" class="searchcon">
+						<input type="text" placeholder="tab1" />
+						<button class="search-btn" type="submit">搜索</button>
+						<div class="input-x" id="input-x">
+							<ul>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+							</ul>
+							<a href="" class="yzb-close">关闭</a>
+						</div>	
+				   </form>	
+				</div>
+				<div class="yzb-con1">
+					<!--tab2内容-->
+					<form action="" class="searchcon">
+						
+						<input type="text" placeholder="tab2" />
+						<button class="search-btn" type="submit">搜索</button>
+						<div class="input-x">
+							<ul>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+								<li>
+									<a href="">张掖猫头鹰改灯——全新CRV改</a>
+									<span>2323结果</span>
+								</li>
+							</ul>
+							<a href="" class="yzb-close">关闭</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var $tabList = $('#yzb-tab ul li');
+			var $tab = $('#yzb-tab-con');
+			var $tab1 = $('#yzb-tab1');
+			var $input=$('.input-x');
+			var $close=$('.yzb-close');
+			
+
+			$tabList.click(function() {
+				$(this).addClass('this').siblings().removeClass('this');
+				var index = $tabList.index(this);
+				$tab.find('.yzb-con1').eq(index).show().siblings().hide();
+				return false;
+			})
+			$tab1.click();
+			$close.click(function(){
+				$input.hide();
+				return false;
+			})
+			$('.yzb-con1 form input').focus(function(){
+				$input.show();
+			})
+			
+		})
+	</script>
+
+</html>
